@@ -23,5 +23,31 @@
     </header>
 
 
+
+
+    <script>
+        const ham = document.getElementById("hamburgermenu");
+        const id_topBar = document.getElementById("topBar");
+
+        ham.addEventListener('click', function () {
+            const bar = this.firstElementChild.classList;
+            bar.toggle('active');
+
+            if (bar.contains('active')) {
+                id_topBar.classList.add('ON');
+            } else {
+                id_topBar.classList.remove('ON');
+            }
+        });
+
+        // classList - Browser Support:
+        // Chrome 8.0
+        // Firefox 3.6
+        // IE 10
+        // Opera 11.50
+        // S}afari 5.1
+        
+    </script>
 </body>
+
 </html>
