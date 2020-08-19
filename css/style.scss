@@ -201,6 +201,44 @@ body {
             }
         }
     }
-
 }
 
+#Main-Page {
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+
+    .main-title {
+        display: flex;
+        align-items: center;
+
+        h1 {
+            font: 700 8em Arial, sans-serif;
+            text-align: right;
+            display: inline-block;
+            border-right: 1px solid white;
+            padding-right: 0.4em;
+            margin-right: 0.4em;
+        }
+
+        p {
+            display: inline-block;
+            font-size: 14px;
+            font-size: 4em;
+        }
+    }
+
+    @media(min-width: 980px) {
+        margin-top: 25%;
+
+        .main-title {
+            h1 {
+                font-size: 76px;
+            }
+
+            p {
+                font-size: 33px;
+            }
+        }
+    }
+}
