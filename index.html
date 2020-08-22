@@ -6,19 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wiór</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
 </head>
 
 <body>
     <header class="top-header container COMMON">
         <a class="logo" href="index.html"><img src="img/logo.png" alt="logo"></a>
-        
+
         <div class="icon-box">
             <a href='mailto:wior@czest.net'>
                 <img class="icons" src="img/ico-mail.png" alt="ikona e-maila">
                 <span class="hide">wior@czest.net</span>
             </a>
-            <a href="tel:34-322-56-88"><img class="icons" src="img/ico-phone.png" alt="ikona telefonu"><span class="hide">34 322 56 88</span></a>
+            <a href="tel:34-322-56-88"><img class="icons" src="img/ico-phone.png" alt="ikona telefonu"><span
+                    class="hide">34 322 56 88</span></a>
         </div>
 
         <div id="hamburgermenu">
@@ -26,21 +29,38 @@
         </div>
         <nav id="topBar" class="nav-top">
             <a href="oferta.html">oferta</a>
-            <a href="contact.html">kontakt</a>
+            <a href="kontakt.html">kontakt</a>
         </nav>
     </header>
 
-    <article id="Main-Page">
+    <div class="bg-main-page">
+        <span></span>
         <header class="main-title">
             <h1>Natura<br> w Twojej<br> sypialni</h1>
             <p>Producent<br> łóżek drewnianych</p>
         </header>
+    </div>
 
+    <header id="Main-Page" class="main-page">
+        <picture class="bg-MP">
+            <source media="(min-width: 980px)" srcset="img/bg-green-big.png">
+            <img src="img/bg-green.png" alt="">
+        </picture>
 
-    </article>
+        <article class="main-desc container">
+            <h2>Nasze łóżka</h2>
+            <p>...wykonywane są z drewna sosnowego, olchowego i dębowego. Na naszą ofertę składają się m.in.: łóżka,
+                stoliki nocne, szuflady i inne. Naszymi odbiorcami są hurtownie i sklepy meblowe. Przedsiębiorstwo
+                Produkcyjno-Usługowo-Handlowe Wiór, jest firmą rodzinną, z tradycjami, której początki sięgają 1965
+                roku. Od początku swej działalności, nasza firma stawiała na pierwszym miejscu zadowolenie klientów, a
+                wszelkiego rodzaju życzenia i uwagi były mile widziane. Również wysoka jakość wykonania mebli, przez
+                szereg dziesięcioleci przyciąga do nas wielu klientów.</p>
+                
+            <a class="btn" href="pages/oferta.html">Zobacz naszą ofertę</a>
+        </article>
+    </header>
 
-
-
+    
     <script>
         const ham = document.getElementById("hamburgermenu");
         const id_topBar = document.getElementById("topBar");
@@ -62,7 +82,6 @@
         // IE 10
         // Opera 11.50
         // S}afari 5.1
-        
     </script>
 </body>
 
