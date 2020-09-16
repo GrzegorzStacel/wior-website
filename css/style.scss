@@ -137,7 +137,6 @@ body {
                 .hide {
                     display: block;
                 }
-
             }
 
             .ico-phone-nav {
@@ -228,8 +227,6 @@ body {
                     color: inherit;
                 }
             }
-
-
         }
 
         &.contact {
@@ -264,7 +261,6 @@ body {
                 font-size: 23px;
             }
         }
-
     }
 
     @media(orientation: landscape) and (max-width: 937px) {
@@ -294,10 +290,6 @@ body {
                 padding: 5px 0px 10px;
             }
         }
-    }
-
-    @media(orientation: landscape) and (min-width: 937px) and (max-width: 1050px){
-        background: #000;
     }
 
     @media(min-width: 980px) {
@@ -360,7 +352,6 @@ body {
                         &:after {
                             display: none;
                         }
-
                     }
                 }
             }
@@ -389,7 +380,6 @@ body {
 
 
 .main-page {
-
     &.bg-main-page {
         position: relative;
         height: 80vh;
@@ -644,7 +634,6 @@ body {
         &.mp-bottom {
             font-size: 31px;
         }
-
     }
 
     @media(min-width: 1920px) {
@@ -666,10 +655,6 @@ body {
     @media(orientation: landscape) and (max-width: 937px) {
         &.bg-main-page {
             height: 110vh;
-
-            span {
-                // background-position: center center;
-            }
 
             .main-title {
                 h1 {
@@ -727,8 +712,6 @@ body {
             width: 19em;
         }
     }
-
-   
 
     @media(min-width: 640px) {
         height: 78vh;
@@ -807,7 +790,6 @@ body {
         header{
             padding-bottom: 40px;
         }
-
     }
 }
 
