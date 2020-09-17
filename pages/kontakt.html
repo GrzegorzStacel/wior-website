@@ -73,8 +73,11 @@
 
             if (bar.contains('active')) {
                 id_topBar.classList.add('ON');
+                document.body.style.overflowY = "hidden";
+
             } else {
                 id_topBar.classList.remove('ON');
+                document.body.style.overflowY = "visible";
             }
         });
 

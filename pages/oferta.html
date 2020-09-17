@@ -40,7 +40,7 @@
     </div>
 
 
-   <script>
+    <script>
         const ham = document.getElementById("hamburgermenu");
         const id_topBar = document.getElementById("topBar");
 
@@ -50,8 +50,11 @@
 
             if (bar.contains('active')) {
                 id_topBar.classList.add('ON');
+                document.body.style.overflowY = "hidden";
+
             } else {
                 id_topBar.classList.remove('ON');
+                document.body.style.overflowY = "visible";
             }
         });
 
