@@ -6,21 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wiór</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
-        rel="stylesheet" />
 </head>
 
 <body>
-    <!-- <header class="top-header container COMMON">
+    <header class="top-header container COMMON">
         <a class="logo" href="../index.html"><img src="../img/logo.png" alt="logo"></a>
 
         <div class="icon-box">
             <a href='mailto:wior@czest.net'>
-                <img class="icons" src="../img/ico-mail.png" alt="ikona e-maila">
+                <img class="icons" src="../img/icon-mail.svg" alt="ikona e-maila">
                 <span class="hide">wior@czest.net</span>
             </a>
-            <a href="tel:34-322-56-88"><img class="icons" src="../img/ico-phone.png" alt="ikona telefonu"><span
+            <a href="tel:34-322-56-88"><img class="icons" src="../img/icon-phone.svg" alt="ikona telefonu"><span
                     class="hide">34 322 56 88</span></a>
         </div>
 
@@ -28,17 +25,74 @@
             <div class="bar"></div>
         </div>
         <nav id="topBar" class="nav-top">
-            <a href="oferta.html">oferta</a>
             <a href="kontakt.html">kontakt</a>
+            <a href="oferta.html">oferta</a>
+            <a class="ico-phone-nav hide" href="tel:34-322-56-88">
+                <img src="../img/icon-phone.svg" alt="ikona telefonu">
+            </a>
+            <p class="hide">Szybki kontakt</p>
         </nav>
-    </header> -->
+    </header>
 
-    <div class="empty-page">
-        <h1>Wior</h1>
-        <h2>(strona z ofertą znajduje sie w fazie produkcji)</h2>
-        <a href="../index.html">Powrót do strony głównej</a>
-    </div>
+    <aside class="offer-page aside">
+        <picture>
+            <source media="(min-width: 980px)" srcset="../img/bg-green-big-offer.png">
+            <img src="../img/bg-green-offer.png" alt="">
+        </picture>
+    </aside>
 
+    <main class="offer-page">
+        <h1>Nasze produkty</h1>
+
+        <section class="item">
+            <div class="product-image">
+                <img src="../img/offer/01-Lila-1_sosna_olcha_wys87_wysnogi41_dl209.png"
+                    alt="łóżko model lila">
+            </div>
+
+            <h2>lila</h2>
+
+            <div class="dimensions">
+                <img src="../img/offer/wymiary.jpg" alt="wymiary">
+                <span class="height">87 cm</span>
+                <span class="height-legs">41 cm</span>
+                <span class="length">209 cm</span>
+            </div>
+
+            <div class="colors">
+                <span>Kolorystyka</span>
+                <img src="../img/offer/sosna-kolory.png" alt="kolory sosny">
+                <img src="../img/offer/dab-kolory.png" alt="kolory dębu">
+                <img src="../img/offer/olcha-kolory.png" alt="kolory olchy">
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="COMMON footer">
+        <picture class="foot-img">
+            <source media="(min-width: 980px)" srcset="../img/footer.png">
+            <img src="../img/footer-mobile.png" alt="footer">
+        </picture>
+        <div class="foot-wrapper" itemscope itemtype="http://schema.org/Organization">
+            <span itemprop="name">P.P.U.H. "WIÓR" Krzysztof Korbela</span>,
+            <div itemprop="address">
+                ul.<span itemprop="streetAddress"> Ludowa 205</span>,
+                <span itemprop="postalCode">42-215</span>
+                <span itemprop="addressLocality">Częstochowa</span>
+                <br>
+            </div>
+            Tel.<span itemprop="telephone"> 34 322 56 88</span>
+            &nbsp;|&nbsp;
+            Fax.<span itemprop="faxNumber"> 34 360 55 86</span>
+            &nbsp;|&nbsp;
+            Tel. kom.<span itemprop="telephone"> 601 433 394</span>
+            &nbsp;|&nbsp;
+            <span itemprop="email">wior@czest.net</span>
+
+            <p>© Copyright 2020 - <a href='mailto:grzegorzstacel@gmail.com'>Grzegorz Stącel</a></p>
+        </div>
+    </footer>
 
     <script>
         const ham = document.getElementById("hamburgermenu");
