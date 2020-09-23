@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiór</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="top-header container COMMON">
+        <a class="logo" href="../index.html"><img src="../img/logo.png" alt="logo"></a>
+
+        <div class="icon-box">
+            <a href='mailto:wior@czest.net'>
+                <img class="icons" src="../img/icon-mail.svg" alt="ikona e-maila">
+                <span class="hide">wior@czest.net</span>
+            </a>
+            <a href="tel:34-322-56-88"><img class="icons" src="../img/icon-phone.svg" alt="ikona telefonu"><span
+                    class="hide">34 322 56 88</span></a>
+        </div>
+
+        <div id="hamburgermenu">
+            <div class="bar"></div>
+        </div>
+        <nav id="topBar" class="nav-top">
+            <a href="kontakt.html">kontakt</a>
+            <a href="oferta.html">oferta</a>
+            <a class="ico-phone-nav hide" href="tel:34-322-56-88">
+                <img src="../img/icon-phone.svg" alt="ikona telefonu">
+            </a>
+            <p class="hide">Szybki kontakt</p>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <header>
+            <h1>P.P.U.H. "WIÓR"<br>
+                Krzysztof Korbela<br>
+                ul. Ludowa 205<br>
+                42-215 Częstochowa</h1>
+            <p>Tel. 34 322 56 88<br>
+                Fax. 34 360 55 86<br>
+                Tel. kom. 601 433 394<br>
+                wior@czest.net</p>
+        </header>
+        <div class="cp-icons">
+            <a href='mailto:wior@czest.net'>
+                <img class="cp-icons" src="../img/icon-mail.svg" alt="Ikona e-maila">
+            </a>
+            <a href="tel:34-322-56-88"><img class="icons" src="../img/icon-phone.svg" alt="Ikona słuchawki telefonicznej"></a>
+        </div>
+    </main>
+
+    <footer class="COMMON footer contact">
+        <picture class="foot-img">
+            <source media="(min-width: 980px)" srcset="../img/footer.png">
+            <img src="../img/footer-mobile.png" alt="">
+        </picture>
+        <div class="foot-wrapper">
+            <p>© Copyright 2020 - <a href='mailto:grzegorzstacel@gmail.com'>Grzegorz Stącel</a></p>
+        </div>
+    </footer>
+
+    <script>
+        const ham = document.getElementById("hamburgermenu");
+        const id_topBar = document.getElementById("topBar");
+
+        ham.addEventListener('click', function () {
+            const bar = this.firstElementChild.classList;
+            bar.toggle('active');
+
+            if (bar.contains('active')) {
+                id_topBar.classList.add('ON');
+                document.body.style.overflowY = "hidden";
+
+            } else {
+                id_topBar.classList.remove('ON');
+                document.body.style.overflowY = "visible";
+            }
+        });
+
+        // classList - Browser Support:
+        // Chrome 8.0
+        // Firefox 3.6
+        // IE 10
+        // Opera 11.50
+        // S}afari 5.1
+    </script>
+</body>
+
+</html>

@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wiór</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header class="top-header container COMMON">
-        <a class="logo" href="index.html"><img src="img/logo.png" alt="logo"></a>
+        <a class="logo" href="../index.html"><img src="../img/logo.png" alt="logo"></a>
 
         <div class="icon-box">
             <a href='mailto:wior@czest.net'>
-                <img class="icons" src="img/icon-mail.svg" alt="ikona e-maila">
+                <img class="icons" src="../img/icon-mail.svg" alt="ikona e-maila">
                 <span class="hide">wior@czest.net</span>
             </a>
-            <a href="tel:34-322-56-88"><img class="icons" src="img/icon-phone.svg" alt="ikona telefonu"><span
+            <a href="tel:34-322-56-88"><img class="icons" src="../img/icon-phone.svg" alt="ikona telefonu"><span
                     class="hide">34 322 56 88</span></a>
         </div>
 
@@ -25,57 +25,54 @@
             <div class="bar"></div>
         </div>
         <nav id="topBar" class="nav-top">
-            <a href="pages/oferta.html">oferta</a>
-            <a href="pages/kontakt.html">kontakt</a>
+            <a href="kontakt.html">kontakt</a>
+            <a href="oferta.html">oferta</a>
             <a class="ico-phone-nav hide" href="tel:34-322-56-88">
-                <img src="img/icon-phone.svg" alt="ikona telefonu">
+                <img src="../img/icon-phone.svg" alt="ikona telefonu">
             </a>
             <p class="hide">Szybki kontakt</p>
         </nav>
     </header>
 
-    <div class="main-page bg-main-page">
-        <span></span>
-        <header class="main-title">
-            <h1>Natura<br> w Twojej<br> sypialni</h1>
-            <p>Producent<br> łóżek drewnianych</p>
-        </header>
-    </div>
-
-    <main class="main-page mp-top">
-        <header class="main-desc container">
-            <h2>Nasze łóżka</h2>
-            <p>...wykonywane są z drewna sosnowego, olchowego i dębowego. Na naszą ofertę składają się m.in.: łóżka,
-                stoliki nocne, szuflady oraz komody. Naszymi odbiorcami są hurtownie i sklepy meblowe. Przedsiębiorstwo
-                Produkcyjno-Usługowo-Handlowe Wiór, jest firmą rodzinną, z tradycjami, której początki sięgają 1965
-                roku. Od początku swej działalności, nasza firma stawiała na pierwszym miejscu zadowolenie klientów,
-                a
-                wszelkiego rodzaju życzenia i uwagi były mile widziane. Również wysoka jakość wykonania mebli, przez
-                szereg dziesięcioleci przyciąga do nas wielu klientów.</p>
-
-            <a class="btn" href="pages/oferta.html">Zobacz naszą ofertę</a>
-        </header>
-    </main>
-
-    <aside class="main-page mp-bottom">
-        <div class="mp-aside-left">
-            <p>Najwyższa jakość<br> materiałów</p>
-            <p>Ponad<br> 20 odcieni drewna</p>
-        </div>
-        <img class="dots" src="img/dots.png" alt="">
-        <div class="mp-aside-right">
-            <p>Doświadczeni<br> fachowcy w branży</p>
-            <p>Unikalny design</p>
-        </div>
+    <aside class="offer-page aside">
+        <picture>
+            <source media="(min-width: 980px)" srcset="../img/bg-green-big-offer.png">
+            <img src="../img/bg-green-offer.png" alt="">
+        </picture>
     </aside>
 
+    <main class="offer-page">
+        <h1>Nasze produkty</h1>
+
+        <section class="item">
+            <div class="product-image">
+                <img src="../img/offer/01-Lila-1_sosna_olcha_wys87_wysnogi41_dl209.png"
+                    alt="łóżko model lila">
+            </div>
+
+            <h2>lila</h2>
+
+            <div class="dimensions">
+                <img src="../img/offer/wymiary.jpg" alt="wymiary">
+                <span class="height">87 cm</span>
+                <span class="height-legs">41 cm</span>
+                <span class="length">209 cm</span>
+            </div>
+
+            <div class="colors">
+                <span>Kolorystyka</span>
+                <img src="../img/offer/sosna-kolory.png" alt="kolory sosny">
+                <img src="../img/offer/dab-kolory.png" alt="kolory dębu">
+                <img src="../img/offer/olcha-kolory.png" alt="kolory olchy">
+            </div>
+
+        </section>
+    </main>
 
     <footer class="COMMON footer">
-        <img class="tree" src="img/bg-tree.png" alt="">
-
         <picture class="foot-img">
-            <source media="(min-width: 980px)" srcset="img/footer.png">
-            <img src="img/footer-mobile.png" alt="">
+            <source media="(min-width: 980px)" srcset="../img/footer.png">
+            <img src="../img/footer-mobile.png" alt="footer">
         </picture>
         <div class="foot-wrapper" itemscope itemtype="http://schema.org/Organization">
             <span itemprop="name">P.P.U.H. "WIÓR" Krzysztof Korbela</span>,
@@ -120,7 +117,7 @@
         // Firefox 3.6
         // IE 10
         // Opera 11.50
-        // Safari 5.1
+        // S}afari 5.1
     </script>
 </body>
 
