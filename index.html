@@ -98,11 +98,32 @@
     </footer>
 
     <script>
-        const ham = document.getElementById("hamburgermenu");
-        const id_topBar = document.getElementById("topBar");
+        //Polyfill IntersectionObserver configuration
+        IntersectionObserver.prototype.POLL_INTERVAL = 100;
+        IntersectionObserver.prototype.USE_MUTATION_OBSERVER = false;
+
+        var myItems = document.querySelectorAll('.anim');
+
+        observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.intersectionRatio > 0) {
+                    entry.target.classList.add('popInBottom');
+
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        myItems.forEach(image => {
+            observer.observe(image);
+        });
+        // End Animations
+
+        var ham = document.getElementById("hamburgermenu");
+        var id_topBar = document.getElementById("topBar");
 
         ham.addEventListener('click', function () {
-            const bar = this.firstElementChild.classList;
+            var bar = this.firstElementChild.classList;
             bar.toggle('active');
 
             if (bar.contains('active')) {
