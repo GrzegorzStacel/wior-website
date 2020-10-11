@@ -765,6 +765,10 @@
             // Animations
             observer.observe(image);
 
+            // Gallery
+            tab.push(new GLightbox({
+                selector: '.item' + nr++,
+                loop: true
             }))
         });
         // End Animations
