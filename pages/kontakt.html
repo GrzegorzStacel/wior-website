@@ -64,11 +64,11 @@
     </footer>
 
     <script>
-        const ham = document.getElementById("hamburgermenu");
-        const id_topBar = document.getElementById("topBar");
+        var ham = document.getElementById("hamburgermenu");
+        var id_topBar = document.getElementById("topBar");
 
         ham.addEventListener('click', function () {
-            const bar = this.firstElementChild.classList;
+            var bar = this.firstElementChild.classList;
             bar.toggle('active');
 
             if (bar.contains('active')) {
