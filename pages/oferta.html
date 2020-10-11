@@ -740,101 +740,34 @@
     </footer>
 
     <script>
-        // GLightgallery
-        var lightbox1 = GLightbox({
-            selector: '.item1',
-            loop: true
-        });
-        var lightbox2 = GLightbox({
-            selector: '.item2',
-            loop: true
-        });
-        var lightbox3 = GLightbox({
-            selector: '.item3',
-            loop: true
-        });
-        var lightbox4 = GLightbox({
-            selector: '.item4',
-            loop: true
-        });
-        var lightbox5 = GLightbox({
-            selector: '.item5',
-            loop: true
-        });
-        var lightbox6 = GLightbox({
-            selector: '.item6',
-            loop: true
-        });
-        var lightbox7 = GLightbox({
-            selector: '.item7',
-            loop: true
-        });
-        var lightbox8 = GLightbox({
-            selector: '.item8',
-            loop: true
-        });
-        var lightbox9 = GLightbox({
-            selector: '.item9',
-            loop: true
-        });
-        var lightbox10 = GLightbox({
-            selector: '.item10',
-            loop: true
-        });
-        var lightbox11 = GLightbox({
-            selector: '.item11',
-            loop: true
-        });
-        var lightbox12 = GLightbox({
-            selector: '.item12',
-            loop: true
-        });
-        var lightbox13 = GLightbox({
-            selector: '.item13',
-            loop: true
-        });
-        var lightbox14 = GLightbox({
-            selector: '.item14',
-            loop: true
-        });
-        var lightbox15 = GLightbox({
-            selector: '.item15',
-            loop: true
-        });
-        var lightbox16 = GLightbox({
-            selector: '.item16',
-            loop: true
-        });
-        var lightbox17 = GLightbox({
-            selector: '.item17',
-            loop: true
-        });
-        var lightbox18 = GLightbox({
-            selector: '.item18',
-            loop: true
-        });
-        var lightbox19 = GLightbox({
-            selector: '.item19',
-            loop: true
-        });
-        var lightbox20 = GLightbox({
-            selector: '.item20',
-            loop: true
-        });
-        var lightbox21 = GLightbox({
-            selector: '.item21',
-            loop: true
-        });
-        var lightbox22 = GLightbox({
-            selector: '.item22',
-            loop: true
-        });
-        var lightbox23 = GLightbox({
-            selector: '.item23',
-            loop: true
+        // Animations
+        //Polyfill IntersectionObserver configuration
+        IntersectionObserver.prototype.POLL_INTERVAL = 100;
+        IntersectionObserver.prototype.USE_MUTATION_OBSERVER = false;
+
+        var myItems = document.querySelectorAll('.item');
+
+        observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.intersectionRatio > 0) {
+                    entry.target.classList.add('fadeInBottom');
+                    entry.target.classList.add('duration-500');
+
+                    observer.unobserve(entry.target);
+                }
+            });
         });
 
-        // END GLightgallery
+        var nr = 1;
+        var tab = [];
+
+        myItems.forEach(image => {
+            // Animations
+            observer.observe(image);
+
+            }))
+        });
+        // End Animations
 
         const ham = document.getElementById("hamburgermenu");
         const id_topBar = document.getElementById("topBar");
