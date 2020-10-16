@@ -1,8 +1,8 @@
 # #6 Wior
-> ...Site under construction...
->
 > This is my 6# website.
 > This is the website of the manufacturer of sleeping beds.
+>
+> [Wior](http://provo.webd.pro/wior/index.html)
 
 
 ## Table of contents
@@ -17,7 +17,7 @@ I make this website according to the project made by [@JustynaStępnik](mailto:j
 
 The website was made in the mobile first approach.
 
-## Screenshots (first look)
+## Screenshots
 ![Example screenshot](./img_readme/1.png)
 
 ***
@@ -30,9 +30,12 @@ The website was made in the mobile first approach.
 * JavaScript
 * SCSS
 
+### Extension
+* [Glightbox](https://biati-digital.github.io/glightbox/)
+* [Vivify](http://vivify.mkcreative.cz/)
+
 ## Status
-Project is: _in progress_
+Project is: _finished_
 
 ## Contact
 Created by [@Grzegorz Stącel](mailto:stacelgrzegorz@gmail.com) - feel free to contact me!
-	
