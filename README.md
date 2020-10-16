@@ -24,6 +24,18 @@ The website was made in the mobile first approach.
 
 ![Example screenshot](./img_readme/2.png)
 
+***
+
+![Example screenshot](./img_readme/3.png)
+
+***
+
+![Example screenshot](./img_readme/4.png)
+
+***
+
+![Example screenshot](./img_readme/5.png)
+
 ## Technologies
 * CSS - vesrion 3
 * HTML - vesrion 5
