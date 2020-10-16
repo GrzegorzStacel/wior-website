@@ -776,6 +776,24 @@
     </footer>
 
     <script>
+        // checking if the browser supports the webp format
+        var a = new Image();
+        a.src = "../img/test_webp.webp";
+
+        a.onload = function () {
+            console.log('webp format is supported');
+        }
+        a.onerror = function () {
+            var myItemsImgFormat = document.querySelectorAll('.product-imagepng');
+
+            for (var i = 0; i < myItemsImgFormat.length; i++) {
+                myItemsImgFormat[i].href = myItemsImgFormat[i].href.substring(0,
+                    myItemsImgFormat[i].href.length - 4) + 'png';
+            }
+            console.log('webp format is not supported');
+        }
+    </script>
+    <script>
         // Animations
         //Polyfill IntersectionObserver configuration
         IntersectionObserver.prototype.POLL_INTERVAL = 100;
