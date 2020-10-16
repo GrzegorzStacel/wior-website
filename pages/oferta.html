@@ -7,8 +7,13 @@
     <title>Wiór</title>
 
     <link rel="stylesheet" href="../css/style.min.css">
-    <link rel="stylesheet" href="../css/glightbox.min.css">
-    <link rel="stylesheet" href="../css/vivify.min.css">
+    <link rel="preload" href="../css/glightbox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="../css/vivify.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <noscript>
+        <link rel="stylesheet" href="../css/vivify.min.css">
+        <link rel="stylesheet" href="../css/glightbox.min.css">
+    </noscript>
 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" defer></script>
     <script src="../js/glightbox.min.js"></script>
