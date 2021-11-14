@@ -2,7 +2,7 @@
 > This is my 6# website.
 > This is the website of the manufacturer of sleeping beds.
 >
-> [Wior](http://provo.webd.pro/wior/index.html)
+> [Wior](https://wior.czest.net/)
 
 
 ## Table of contents
